@@ -23,5 +23,6 @@ from IPython.display import HTML
 animation = camera.animate()
 HTML(animation.to_jshtml())
 ```
-## Theory & Formulas
-The Highest Point of the trajectory , $H = \frac{v}{\cos 2}$
+## Formulas
+![Formulas](images/formulas.PNG)
+
