@@ -1,11 +1,11 @@
 # Projectile-Motion-Visualization-with-Matplotlib
 
 ## How to use
-![input.PNG](attachment:input.PNG)
+![Input Values](/images/input.png)
 
 Enter the initial velocity and launch angle.
 
-![flight.PNG](attachment:flight.PNG)
-![flight%202.PNG](attachment:flight%202.PNG)
+![Visualization 1](/images/flight.png)
+![Visualization 2](/images/flight2.png)
 
 The curved line will go through the projectile's trajectory.
