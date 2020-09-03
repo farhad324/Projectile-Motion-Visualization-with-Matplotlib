@@ -3,7 +3,7 @@
 ## How to use
 ![Input Values](images/input.PNG)
 
-Enter the initial velocity and launch angle.
+Enter the initial velocity and launch angle & click OK to start the matplotlib animation.
 
 ![Visualization (a)](images/flight.PNG)![Vizualization (b)](images/flight%202.PNG)
 
