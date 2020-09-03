@@ -24,4 +24,4 @@ animation = camera.animate()
 HTML(animation.to_jshtml())
 ```
 ## Theory & Formulas
-The Highest Point of the trajectory , $H = \frac{v}{cos2}
+The Highest Point of the trajectory , $H = \frac{v}{cos2}$
