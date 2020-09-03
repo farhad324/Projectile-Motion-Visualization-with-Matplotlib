@@ -17,3 +17,9 @@ from IPython.display import HTML
 animation = camera.animate()
 HTML(animation.to_html5_video())
 ```
+or 
+```python
+from IPython.display import HTML
+animation = camera.animate()
+HTML(animation.to_jshtml())
+```
