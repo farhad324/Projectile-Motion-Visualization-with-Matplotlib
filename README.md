@@ -14,14 +14,12 @@ It also shows the output value of both including the value of total flight time.
 ### Viewing in Jupytar Notebook
 ```python
 from IPython.display import HTML
-animation = camera.animate()
-HTML(animation.to_html5_video())
+HTML(ani.to_html5_video())
 ```
 or 
 ```python
 from IPython.display import HTML
-animation = camera.animate()
-HTML(animation.to_jshtml())
+HTML(ani.to_jshtml())
 ```
 ## Code & Formulae
 ### EasyGui Inputs
@@ -59,3 +57,5 @@ Here, 'h' refers to the highest point, 'v' is the initial horizontal velocity, '
 'v' and 'theta' are going to get their values from fieldValues[0] and fieldValues[1] respectively.
 
 We, used the formulae for the other variables and derived r_for_h which is the horizontal distance when the vertical distance is the highest.
+
+### Matplotlib Animation
