@@ -23,7 +23,8 @@ from IPython.display import HTML
 animation = camera.animate()
 HTML(animation.to_jshtml())
 ```
-## EasyGui Inputs
+## Code & Formulae
+### EasyGui Inputs
 We will be taking two input by using easygui.multenterbox. 
 ```python
 fieldNames = ["Velocity","Angle"]
@@ -42,7 +43,7 @@ while 1:
     fieldValues = easygui.multenterbox(errmsg, title, fieldNames, fieldValues)
 print ("Reply was:", fieldValues)
 ```
-## Formulae
+### Formulae
 ![Formulae](images/formulas.PNG)
 
 ```python
@@ -55,3 +56,6 @@ h=((v**2) *(np.sin(theta)**2))/(2*g)
 r= (v**2) * np.sin(2*theta) / g
 ```
 Here, 'h' refers to the highest point, 'v' is the initial horizontal velocity, 'g' is the gravitational acceleration, 'theta' is the launching angle, r is the horizontal range.
+'v' and 'theta' are going to get their values from fieldValues[0] and fieldValues[1] respectively.
+
+We, used the formulae for the other variables and derived r_for_h which is the horizontal distance when the vertical distance is the highest.
