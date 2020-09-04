@@ -55,7 +55,8 @@ line, = ax.plot(x, v * np.sin(theta) * x - (0.5) * g * x**2)   # plot of x and y
 
 def animate(i):
     """change the divisor of i to get a faster (but less precise) animation """
-    
+    line.set_linestyle("-")
+    line.set_linewidth(3.5)                  
     line.set_xdata(v * np.cos(theta) * (t + i /100.0))
     line.set_ydata(v * np.sin(theta) * (x + i /100.0) - (0.5) * g * (x + i / 100.0)**2)
     return line,
