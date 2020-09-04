@@ -61,9 +61,11 @@ def animate(i):
     return line,
  
 
+plt.axhline(0, color='black')
+plt.axvline(0, color='black')
 plt.xlabel('Distance (x)')
 plt.ylabel('Distance (y)')
-plt.axis([0.0, 25.0, 0.0, 8.0])
+plt.axis([-1.0, 25.0, -0.5, 8.0])
 ax.set_autoscale_on(False)
 
 ani = animation.FuncAnimation(fig, animate, np.arange(1, 200),interval=20)
