@@ -69,6 +69,5 @@ plt.ylabel('Distance (y)')
 plt.axis([-1.0, 25.0, -0.5, 8.0])
 ax.set_autoscale_on(False)
 
-ani = animation.FuncAnimation(fig, animate, np.arange(1, 200),interval=20)
+ani = animation.FuncAnimation(fig, animate,frames=np.arange(1, 200),interval=20)
 plt.show()
-
