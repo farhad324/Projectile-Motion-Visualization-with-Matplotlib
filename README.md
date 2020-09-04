@@ -85,7 +85,29 @@ line, = ax.plot(x, v * np.sin(theta) * x - (0.5) * g * x**2)
 
 def animate(i):
 
+    line.set_linestyle("-")
+    line.set_linewidth(3.5)                  
     line.set_xdata(v * np.cos(theta) * (t + i /100.0))
     line.set_ydata(v * np.sin(theta) * (x + i /100.0) - (0.5) * g * (x + i / 100.0)**2)
     return line,
 ```
+The newly created variable 'x' is a numpy array that will be used in the 'line,' to plot x and y in time.
+The other new variable 't' is used for line.set_xdata and line.set_ydata.
+Here, I used a comma after the line variable because ax.plot() returns a tuple which contains only one element.
+If you assign it without the comma, you just assign the tuple.
+
+```python
+plt.axhline(0, color='black')
+plt.axvline(0, color='black')
+plt.xlabel('Distance (x)')
+plt.ylabel('Distance (y)')
+plt.axis([-1.0, 25.0, -0.5, 8.0])
+ax.set_autoscale_on(False)
+
+ani = animation.FuncAnimation(fig, animate,np.arange(1, 200),interval=20)
+plt.show()
+```
+To create to x-axis and y-axis "plt.axhline(0, color='black')" and "plt.axvline(0, color='black')" are used.
+I labelled the axis as Distance (x) and Distance (y). After that, set the graph size from -1 to 25 in the x-axis and -0.5 to 8 in the y-axis.
+Here, in the 'frames' parameter I used an array to create a loop of the simulation.
+The 'interval' parameter is for the speed of the simulation or visualization of the projectile.
