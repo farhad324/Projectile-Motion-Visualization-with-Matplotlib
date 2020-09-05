@@ -6,6 +6,7 @@
 Enter the initial velocity and launch angle & click OK to start the matplotlib animation.
 
 ![Visualization (a)](images/flight.PNG)
+
 ![Vizualization (b)](images/flight%202.PNG)
 
 The curved line will go through the projectile's trajectory.
